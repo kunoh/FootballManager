@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Ligningsudregning</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-social.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Hind+Guntur:300,400,600" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Playfair+Display:900|Raleway:300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <h1 id="Overskrift">Football manager</h1>
+
+    <script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+    <script>
+// Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyD0m_RFpnrkDKGn5xXIyGsWY7qKZ3_Uf4M",
+            authDomain: "foot-cb5a9.firebaseapp.com",
+            databaseURL: "https://foot-cb5a9.firebaseio.com",
+            projectId: "foot-cb5a9",
+            storageBucket: "foot-cb5a9.appspot.com",
+            messagingSenderId: "1021895041298"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+
+    Brugernavn:<br>
+    <input type="text" id="Brugernavn" value="">
+    <br>
+    Kode:<br>
+    <input type="password" id="Kode" value="">
+    <br><br>
+    <button onclick="logIn(document.getElementById('Brugernavn').value, document.getElementById('Kode').value)">Log ind</button>
+
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+</body>
+</html>
